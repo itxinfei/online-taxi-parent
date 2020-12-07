@@ -1,1 +1,43 @@
 # Created by .ignore support plugin (hsz.mobi)
+### Java template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+.gitignore
+.idea/
+api-listen-order/api-listen-order.iml
+api-listen-order/target/
+config-client/config-client.iml
+config-client/target/
+eureka/eureka.iml
+eureka/target/
+online-taxi-common/online-taxi-common.iml
+online-taxi-common/target/
+online-taxi-demo-app/online-taxi-demo-app.iml
+online-taxi-demo-app/target/
+online-taxi-parent.iml
+service-jms-consumer/service-jms-consumer.iml
+service-jms-consumer/target/
+service-jms-produce/service-jms-produce.iml
+service-jms-produce/target/
