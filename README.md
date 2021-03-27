@@ -47,54 +47,54 @@
 
 #### 登录注册
 
-![乘客登录注册时序图](README/乘客登录注册时序图.png)
+![乘客登录注册时序图](.doc/README/乘客登录注册时序图.png)
 
 #### 验证码
 
-![发送验证码接口时序图](README/发送验证码接口时序图.png)
+![发送验证码接口时序图](.doc/README/发送验证码接口时序图.png)
 
 #### 司机端
 
-![司机端时序图](README/司机端时序图.png)
+![司机端时序图](.doc/README/司机端时序图.png)
 
 #### 订单
 
-![乘客订单相关时序图](README/乘客订单相关时序图.png)
+![乘客订单相关时序图](.doc/README/乘客订单相关时序图.png)
 
 #### 信息修改
 
-![乘客修改个人资料时序图](README/乘客修改个人资料时序图.png)
+![乘客修改个人资料时序图](.doc/README/乘客修改个人资料时序图.png)
 
 #### 信息维护
 
-![乘客维护个人地址信息维护](README/乘客维护个人地址信息维护.png)
+![乘客维护个人地址信息维护](.doc/README/乘客维护个人地址信息维护.png)
 
 ### 项目演示
 
 #### 派单 / 接单
 
-<img src="README/image-20200813210408997.png" alt="image-20200813210408997" style="zoom: 50%;" />
+<img src=".doc/README/image-20200813210408997.png" alt="image-20200813210408997" style="zoom: 50%;" />
 
 #### 到达约定地点
 
-<img src="README/image-20200813210543356.png" alt="image-20200813210543356" style="zoom:50%;" />
+<img src=".doc/README/image-20200813210543356.png" alt="image-20200813210543356" style="zoom:50%;" />
 
 #### 接到乘客
 
-<img src="README/image-20200813210824474.png" alt="image-20200813210824474" style="zoom:50%;" />
+<img src=".doc/README/image-20200813210824474.png" alt="image-20200813210824474" style="zoom:50%;" />
 
 #### 开始行程
 
-<img src="README/image-20200813210912209.png" alt="image-20200813210912209" style="zoom:50%;" />
+<img src=".doc/README/image-20200813210912209.png" alt="image-20200813210912209" style="zoom:50%;" />
 
 #### 到达目的地
 
-<img src="README/image-20200813211005619.png" alt="image-20200813211005619" style="zoom:50%;" />
+<img src=".doc/README/image-20200813211005619.png" alt="image-20200813211005619" style="zoom:50%;" />
 
 #### 发起收款
 
-![image-20200813211327043](README/image-20200813211327043.png)
+![image-20200813211327043](.doc/README/image-20200813211327043.png)
 
 #### 收到
 
-<img src="README/image-20200813211449976.png" alt="image-20200813211449976" style="zoom:50%;" />
+<img src=".doc/README/image-20200813211449976.png" alt="image-20200813211449976" style="zoom:50%;" />
