@@ -1,4 +1,4 @@
-package com.online.taxi.dto.map;
+package com.online.taxi.common.dto.map;
 
 import lombok.Data;
 

@@ -19,12 +19,12 @@ import java.util.List;
 public class BindExceptionHanlder {
 
     @ResponseStatus(code = HttpStatus.BAD_REQUEST)
-    @ExceptionHandler(value = {BindException.class,ValidationException.class,MethodArgumentNotValidException.class})
+    @ExceptionHandler(value = {BindException.class, ValidationException.class, MethodArgumentNotValidException.class})
     public ResponseResult handleBindException(HttpServletRequest request, Exception exception) {
 
         String exceptionClassName = exception.getClass().getName();
         String message = "参数错误";
-        switch (exceptionClassName){
+        switch (exceptionClassName) {
             case "org.springframework.validation.BindException":
                 BindException bindException = (BindException) exception;
                 message = bindException.getFieldError().getDefaultMessage();
@@ -39,6 +39,6 @@ public class BindExceptionHanlder {
                 message = bindingResult.getFieldError().getDefaultMessage();
         }
         System.out.println(exception);
-        return ResponseResult.fail(0,message);
+        return ResponseResult.fail(0, message);
     }
 }

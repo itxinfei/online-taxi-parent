@@ -1,4 +1,4 @@
-package com.online.taxi.dto.valuation.charging;
+package com.online.taxi.common.dto.valuation.charging;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.online.taxi.util;
+package com.online.taxi.common.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

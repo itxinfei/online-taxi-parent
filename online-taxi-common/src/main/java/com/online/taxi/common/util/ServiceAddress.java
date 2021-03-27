@@ -1,4 +1,4 @@
-package com.online.taxi.util;
+package com.online.taxi.common.util;
 
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;

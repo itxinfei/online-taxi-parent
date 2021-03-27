@@ -1,4 +1,4 @@
-package com.online.taxi.dto.phone.request;
+package com.online.taxi.common.dto.phone.request;
 
 import lombok.Data;
 import java.util.Date;

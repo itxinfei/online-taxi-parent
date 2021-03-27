@@ -1,4 +1,4 @@
-package com.online.taxi.constatnt;
+package com.online.taxi.common.constatnt;
 
 /**
  * @author yueyi2019

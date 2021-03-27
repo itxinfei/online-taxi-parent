@@ -1,4 +1,4 @@
-package com.online.taxi.util;
+package com.online.taxi.common.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package com.online.taxi.util;
+package com.online.taxi.common.util;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

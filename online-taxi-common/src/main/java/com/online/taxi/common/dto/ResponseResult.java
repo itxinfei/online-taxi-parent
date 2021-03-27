@@ -1,10 +1,10 @@
-package com.online.taxi.dto;
+package com.online.taxi.common.dto;
 
+import com.online.taxi.common.constatnt.BusinessInterfaceStatus;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import org.springframework.http.HttpStatus;
 
-import com.online.taxi.constatnt.BusinessInterfaceStatus;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.online.taxi.constatnt;
+package com.online.taxi.common.constatnt;
 
 /**
  * 队列名称

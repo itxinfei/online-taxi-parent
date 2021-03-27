@@ -1,4 +1,4 @@
-package com.online.taxi.dto.phone.response;
+package com.online.taxi.common.dto.phone.response;
 
 import lombok.Data;
 

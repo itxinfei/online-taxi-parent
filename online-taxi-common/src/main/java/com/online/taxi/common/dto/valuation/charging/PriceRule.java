@@ -1,4 +1,4 @@
-package com.online.taxi.dto.valuation.charging;
+package com.online.taxi.common.dto.valuation.charging;
 
 import lombok.Data;
 
@@ -26,5 +26,5 @@ public class PriceRule {
     /**
      * 分段计时规则
      */
-    private List<TimeRule> timeRules;
+    private List<com.online.taxi.dto.valuation.charging.TimeRule> timeRules;
 }

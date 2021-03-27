@@ -1,4 +1,4 @@
-package com.online.taxi.dto.valuation.adjustment;
+package com.online.taxi.common.dto.valuation.adjustment;
 
 import lombok.Data;
 

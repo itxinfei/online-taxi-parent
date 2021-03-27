@@ -1,4 +1,4 @@
-package com.online.taxi.constatnt;
+package com.online.taxi.common.constatnt;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public enum AudienceEnum implements CodeEnum {
+public enum AudienceEnum implements com.online.taxi.constatnt.CodeEnum {
     /**
      * 别名
      */

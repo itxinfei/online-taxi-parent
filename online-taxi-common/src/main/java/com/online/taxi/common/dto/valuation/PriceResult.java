@@ -1,4 +1,4 @@
-package com.online.taxi.dto.valuation;
+package com.online.taxi.common.dto.valuation;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

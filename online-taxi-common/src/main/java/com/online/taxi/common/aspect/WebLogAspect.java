@@ -1,4 +1,4 @@
-package com.online.taxi.aspect;
+package com.online.taxi.common.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;

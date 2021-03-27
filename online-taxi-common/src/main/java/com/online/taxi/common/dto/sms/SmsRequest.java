@@ -1,4 +1,4 @@
-package com.online.taxi.dto.sms;
+package com.online.taxi.common.dto.sms;
 
 import lombok.Data;
 

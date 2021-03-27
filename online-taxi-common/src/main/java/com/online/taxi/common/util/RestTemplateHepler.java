@@ -1,4 +1,4 @@
-package com.online.taxi.util;
+package com.online.taxi.common.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.online.taxi.dto.ResponseResult;

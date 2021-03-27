@@ -1,4 +1,4 @@
-package com.online.taxi.dto.government;
+package com.online.taxi.common.dto.government;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

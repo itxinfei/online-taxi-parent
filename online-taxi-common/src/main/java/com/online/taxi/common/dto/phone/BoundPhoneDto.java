@@ -1,4 +1,4 @@
-package com.online.taxi.dto.phone;
+package com.online.taxi.common.dto.phone;
 
 import lombok.Data;
 

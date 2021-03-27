@@ -1,4 +1,4 @@
-package com.online.taxi.dto.phone;
+package com.online.taxi.common.dto.phone;
 
 import lombok.Data;
 
@@ -12,5 +12,5 @@ import java.util.List;
 @Data
 public class PhoneInfoDto {
     private Integer idType;
-    private List<PhoneInfoView> infoList;
+    private List<com.online.taxi.dto.phone.PhoneInfoView> infoList;
 }

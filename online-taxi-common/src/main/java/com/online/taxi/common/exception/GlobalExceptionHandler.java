@@ -1,11 +1,11 @@
-package com.online.taxi.exception;
+package com.online.taxi.common.exception;
 
+import com.online.taxi.common.dto.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.online.taxi.dto.ResponseResult;
 
 /**
  */

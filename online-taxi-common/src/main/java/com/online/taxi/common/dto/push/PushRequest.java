@@ -1,4 +1,4 @@
-package com.online.taxi.dto.push;
+package com.online.taxi.common.dto.push;
 
 import lombok.Data;
 

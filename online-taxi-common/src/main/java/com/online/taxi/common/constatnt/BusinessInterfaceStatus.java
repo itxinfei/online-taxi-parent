@@ -1,4 +1,4 @@
-package com.online.taxi.constatnt;
+package com.online.taxi.common.constatnt;
 
 import lombok.Getter;
 
@@ -6,7 +6,7 @@ import lombok.Getter;
  * @author yueyi2019
  */
 @Getter
-public enum BusinessInterfaceStatus implements CodeEnum {
+public enum BusinessInterfaceStatus implements com.online.taxi.constatnt.CodeEnum {
 
     /**
      * 操作成功

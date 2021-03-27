@@ -1,4 +1,4 @@
-package com.online.taxi.dto.map;
+package com.online.taxi.common.dto.map;
 import java.util.List;
 import lombok.Data;
 /**
@@ -11,5 +11,5 @@ public class Dispatch{
 	
 	private String orderId;
 	
-	private List<Vehicle> vehicles;
+	private List<com.online.taxi.dto.map.Vehicle> vehicles;
 }
