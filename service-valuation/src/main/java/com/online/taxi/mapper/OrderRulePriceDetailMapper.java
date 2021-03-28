@@ -1,6 +1,6 @@
 package com.online.taxi.mapper;
 
-import com.online.taxi.entity.OrderRulePriceDetail;
+import com.online.taxi.common.entity.OrderRulePriceDetail;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

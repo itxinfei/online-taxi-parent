@@ -1,8 +1,7 @@
 package com.online.taxi.order.dao;
 
-import org.apache.ibatis.annotations.Mapper;
-
 import com.online.taxi.common.entity.Order;
+import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface OrderMapper {

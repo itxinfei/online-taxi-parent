@@ -12,5 +12,5 @@ import java.util.List;
 @Data
 public class PhoneInfoDto {
     private Integer idType;
-    private List<com.online.taxi.dto.phone.PhoneInfoView> infoList;
+    private List<PhoneInfoView> infoList;
 }

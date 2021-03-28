@@ -1,15 +1,13 @@
-package com.online.taxi.jms;
+package com.online.taxi.common.jms;
 
+import com.online.taxi.common.constatnt.QueueNames;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.online.taxi.constatnt.QueueNames;
 
 /**
  * 消息队列
- *
- * @date 2018/8/24
  */
 @Configuration
 public class SupervisionDestination {

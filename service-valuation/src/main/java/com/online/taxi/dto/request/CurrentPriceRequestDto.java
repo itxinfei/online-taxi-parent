@@ -4,8 +4,6 @@ import lombok.Data;
 
 /**
  * 实时价格请求DTO
- *
- * @date 2018/11/1
  */
 @Data
 public class CurrentPriceRequestDto {

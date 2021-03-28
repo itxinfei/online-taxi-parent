@@ -3,6 +3,7 @@ package com.online.taxi.dao.entity;
 import java.util.Date;
 
 public class ServiceSmsRecord {
+
     private Integer id;
 
     private String phoneNumber;

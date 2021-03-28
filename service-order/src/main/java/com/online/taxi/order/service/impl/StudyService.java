@@ -22,13 +22,10 @@ public class StudyService {
 //    private RedisTemplate<String,String> redisTemplate;
 
 
-    public void grab(String orderId , String driverId){
+    public void grab(String orderId, String driverId) {
         String uuid = UUID.randomUUID().toString();
 //        redisTemplate.opsForValue().setIfAbsent(orderId,uuid);
 //        redisTemplate.expire("",10,TimeUnit.SECONDS);
-
-
-
 
 
         //delete

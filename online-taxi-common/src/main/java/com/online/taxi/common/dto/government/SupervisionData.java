@@ -1,5 +1,6 @@
 package com.online.taxi.common.dto.government;
 
+import com.online.taxi.common.constatnt.CodeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -7,7 +8,6 @@ import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 
-import com.online.taxi.constatnt.CodeEnum;
 
 /**
  * 上报对象DTO

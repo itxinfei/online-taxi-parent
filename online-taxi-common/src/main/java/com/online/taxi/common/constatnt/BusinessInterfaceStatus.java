@@ -6,7 +6,7 @@ import lombok.Getter;
  * @author yueyi2019
  */
 @Getter
-public enum BusinessInterfaceStatus implements com.online.taxi.constatnt.CodeEnum {
+public enum BusinessInterfaceStatus implements CodeEnum {
 
     /**
      * 操作成功

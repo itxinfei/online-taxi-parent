@@ -1,8 +1,9 @@
 package com.online.taxi.mapper;
 
-import com.online.taxi.dto.valuation.discount.DiscountCondition;
-import com.online.taxi.dto.valuation.discount.DiscountPrice;
-import com.online.taxi.entity.DynamicDiscountRule;
+
+import com.online.taxi.common.dto.valuation.discount.DiscountCondition;
+import com.online.taxi.common.dto.valuation.discount.DiscountPrice;
+import com.online.taxi.common.entity.DynamicDiscountRule;
 
 public interface DynamicDiscountRuleMapper {
     /**

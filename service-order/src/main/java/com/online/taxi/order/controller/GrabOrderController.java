@@ -22,15 +22,15 @@ public class GrabOrderController {
     // mysql锁
 //    @Qualifier("grabMysqlLockService")
     //单个redisson
-    @Qualifier("grabRedisRedissonService")    
+    @Qualifier("grabRedisRedissonService")
     // 红锁
 //    @Qualifier("grabRedisRedissonRedLockLockService")
     private GrabService grabService;
-    
-    
+
+
     @GetMapping("/do/{orderId}")
-    public String grab(@PathVariable("orderId") int orderId, int driverId){
-        grabService.grabOrder(orderId,driverId);
+    public String grab(@PathVariable("orderId") int orderId, int driverId) {
+        grabService.grabOrder(orderId, driverId);
         ResponseResult.success(new BaseResponse());
         return "";
     }

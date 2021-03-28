@@ -31,5 +31,4 @@ public class SendController {
         aliService.sendSms(smsSendRequest);
         return  ResponseResult.success("");
     }
-	
 }

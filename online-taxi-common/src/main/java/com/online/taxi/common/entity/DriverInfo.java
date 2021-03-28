@@ -1,4 +1,4 @@
-package com.online.taxi.entity;
+package com.online.taxi.common.entity;
 
 import java.math.BigDecimal;
 import java.util.Date;

@@ -5,6 +5,6 @@ import com.online.taxi.dao.entity.PassengerUserInfo;
 
 public interface ServicePassengerUserInfoService {
 
-    public ResponseResult<PassengerUserInfo> login(String  passengerPhone);
+    public ResponseResult<PassengerUserInfo> login(String passengerPhone);
 
 }

@@ -3,6 +3,7 @@ package com.online.taxi.dao.entity;
 import java.util.Date;
 
 public class ServiceSmsTemplate {
+
     private Integer id;
 
     private String templateId;

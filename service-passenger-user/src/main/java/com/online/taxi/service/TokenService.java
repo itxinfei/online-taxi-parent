@@ -6,6 +6,7 @@ package com.online.taxi.service;
 public interface TokenService {
     /**
      * 生成token
+     *
      * @param subject
      * @return
      */

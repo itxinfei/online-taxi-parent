@@ -1,8 +1,8 @@
 package com.online.taxi.dto;
 
-import com.online.taxi.dto.valuation.charging.TagPrice;
-import com.online.taxi.entity.OrderRulePrice;
-import com.online.taxi.entity.OrderRulePriceDetail;
+import com.online.taxi.common.dto.valuation.charging.TagPrice;
+import com.online.taxi.common.entity.OrderRulePrice;
+import com.online.taxi.common.entity.OrderRulePriceDetail;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -11,8 +11,6 @@ import java.util.List;
 
 /**
  * 价格集合类
- *
- * @date 2018/10/18
  */
 @Data
 @Accessors(chain = true)

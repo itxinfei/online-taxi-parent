@@ -1,6 +1,6 @@
 package com.online.taxi.mapper;
 
-import com.online.taxi.entity.Order;
+import com.online.taxi.common.entity.Order;
 
 public interface OrderMapper {
     /**

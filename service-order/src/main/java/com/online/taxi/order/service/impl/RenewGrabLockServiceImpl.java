@@ -22,15 +22,15 @@ public class RenewGrabLockServiceImpl implements RenewGrabLockService {
     @Async
     public void renewLock(String key, String value, int time) {
         String v = redisTemplate.opsForValue().get(key);
-        if (v.equals(value)){
+        if (v.equals(value)) {
             int sleepTime = time / 3;
             try {
                 Thread.sleep(sleepTime * 1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            redisTemplate.expire(key,time,TimeUnit.SECONDS);
-            renewLock(key,value,time);
+            redisTemplate.expire(key, time, TimeUnit.SECONDS);
+            renewLock(key, value, time);
         }
     }
 }

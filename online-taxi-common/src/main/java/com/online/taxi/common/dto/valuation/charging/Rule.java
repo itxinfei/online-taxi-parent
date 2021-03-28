@@ -6,8 +6,6 @@ import java.util.List;
 
 /**
  * 计费规则
- *
- * @date 2018/8/14
  */
 @Data
 public class Rule {
@@ -46,5 +44,4 @@ public class Rule {
      * 标签费用
      */
     private List<TagPrice> tagPrices;
-
 }

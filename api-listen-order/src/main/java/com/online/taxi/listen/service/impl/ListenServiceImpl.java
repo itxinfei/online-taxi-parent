@@ -3,6 +3,9 @@ package com.online.taxi.listen.service.impl;
 import com.online.taxi.common.constant.RedisKeyConstant;
 import com.online.taxi.listen.response.PreGrabResponse;
 import com.online.taxi.listen.service.ListenService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 
 
 import java.util.Random;

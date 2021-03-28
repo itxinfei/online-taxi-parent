@@ -26,5 +26,5 @@ public class PriceRule {
     /**
      * 分段计时规则
      */
-    private List<com.online.taxi.dto.valuation.charging.TimeRule> timeRules;
+    private List<TimeRule> timeRules;
 }

@@ -2,8 +2,8 @@ package com.online.taxi.dao.cache;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.online.taxi.constatnt.OrderRuleNames;
-import com.online.taxi.dto.valuation.charging.Rule;
+import com.online.taxi.common.constatnt.OrderRuleNames;
+import com.online.taxi.common.dto.valuation.charging.Rule;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -12,8 +12,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * 对计价规则进行缓存操作
- *
- * @date 2018/10/18
  */
 @Component
 @RequiredArgsConstructor
@@ -21,7 +19,7 @@ import org.springframework.stereotype.Component;
 public class RuleCache {
 
     @NonNull
-    private StringRedisTemplate redisTemplate;
+    private final StringRedisTemplate redisTemplate;
 
     private ObjectMapper mapper = new ObjectMapper();
 

@@ -11,9 +11,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 public class ServiceOrderDispatchApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ServiceOrderDispatchApplication.class, args);
-	}
-
-
+    public static void main(String[] args) {
+        SpringApplication.run(ServiceOrderDispatchApplication.class, args);
+    }
 }

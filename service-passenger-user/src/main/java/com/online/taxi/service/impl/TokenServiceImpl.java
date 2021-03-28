@@ -12,12 +12,13 @@ public class TokenServiceImpl implements TokenService {
 
     /**
      * 生成token
+     *
      * @param subject
      * @return
      */
     @Override
     public String createToken(String subject) {
-        String jwtStr = JwtUtil.createToken(subject,new Date());
+        String jwtStr = JwtUtil.createToken(subject, new Date());
         //存缓存，设置过期时间
         return null;
     }

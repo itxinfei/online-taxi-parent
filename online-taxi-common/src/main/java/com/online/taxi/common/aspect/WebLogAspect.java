@@ -13,8 +13,8 @@ import java.util.Arrays;
 
 /**
  * 记录所有日志
- * @author yueyi2019
  *
+ * @author yueyi2019
  */
 @Aspect
 @Component
@@ -32,15 +32,16 @@ public class WebLogAspect {
         HttpServletRequest request = attributes.getRequest();
 
         // 记录下请求内容
-        log.info("request:{url : " + request.getRequestURL().toString()+", token:"+request.getHeader("token")
-                +", method:"+request.getMethod()+", ip:"+request.getRemoteAddr()+", class method:"
-                +joinPoint.getSignature().getDeclaringTypeName() + "."+ joinPoint.getSignature().getName()
-                +", param:"+Arrays.toString(joinPoint.getArgs())+"}");
+        log.info("request:{url : " + request.getRequestURL().toString() + ", token:" + request.getHeader("token")
+                + ", method:" + request.getMethod() + ", ip:" + request.getRemoteAddr() + ", class method:"
+                + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName()
+                + ", param:" + Arrays.toString(joinPoint.getArgs()) + "}");
 
     }
+
     /**
-     *  returning的值和doAfterReturning的参数名一致
-      */
+     * returning的值和doAfterReturning的参数名一致
+     */
     @AfterReturning(returning = "ret", pointcut = "logPointCut()")
     public void doAfterReturning(Object ret) throws Throwable {
         // 处理完请求，返回内容

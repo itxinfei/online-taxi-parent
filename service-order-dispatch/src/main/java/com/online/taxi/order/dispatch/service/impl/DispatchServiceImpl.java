@@ -16,15 +16,13 @@ import java.util.List;
 public class DispatchServiceImpl implements DispatchService {
 
     @Autowired
-    private RedisTemplate<String , String> redisTemplate;
+    private RedisTemplate<String, String> redisTemplate;
 
     @Override
     public ResponseResult dispatch(int orderId, List<Integer> driverIdList) {
-        for (int driverId:driverIdList
-             ) {
-            redisTemplate.opsForValue().setIfAbsent(RedisKeyConstant.DRIVER_LISTEN_ORDER_PRE +driverId,orderId+"");
+        for (int driverId : driverIdList) {
+            redisTemplate.opsForValue().setIfAbsent(RedisKeyConstant.DRIVER_LISTEN_ORDER_PRE + driverId, orderId + "");
         }
-
         return ResponseResult.success("");
     }
 }

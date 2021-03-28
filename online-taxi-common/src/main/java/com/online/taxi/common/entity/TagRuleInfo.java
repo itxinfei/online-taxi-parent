@@ -1,4 +1,4 @@
-package com.online.taxi.entity;
+package com.online.taxi.common.entity;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -81,7 +81,6 @@ public class TagRuleInfo {
      * This method returns the value of the database column tbl_tag_rule_info.id
      *
      * @return the value of tbl_tag_rule_info.id
-     *
      * @mbggenerated
      */
     public Integer getId() {
@@ -93,7 +92,6 @@ public class TagRuleInfo {
      * This method sets the value of the database column tbl_tag_rule_info.id
      *
      * @param id the value for tbl_tag_rule_info.id
-     *
      * @mbggenerated
      */
     public void setId(Integer id) {
@@ -105,7 +103,6 @@ public class TagRuleInfo {
      * This method returns the value of the database column tbl_tag_rule_info.city_code
      *
      * @return the value of tbl_tag_rule_info.city_code
-     *
      * @mbggenerated
      */
     public String getCityCode() {
@@ -117,7 +114,6 @@ public class TagRuleInfo {
      * This method sets the value of the database column tbl_tag_rule_info.city_code
      *
      * @param cityCode the value for tbl_tag_rule_info.city_code
-     *
      * @mbggenerated
      */
     public void setCityCode(String cityCode) {
@@ -129,7 +125,6 @@ public class TagRuleInfo {
      * This method returns the value of the database column tbl_tag_rule_info.service_type_id
      *
      * @return the value of tbl_tag_rule_info.service_type_id
-     *
      * @mbggenerated
      */
     public Integer getServiceTypeId() {
@@ -141,7 +136,6 @@ public class TagRuleInfo {
      * This method sets the value of the database column tbl_tag_rule_info.service_type_id
      *
      * @param serviceTypeId the value for tbl_tag_rule_info.service_type_id
-     *
      * @mbggenerated
      */
     public void setServiceTypeId(Integer serviceTypeId) {
@@ -153,7 +147,6 @@ public class TagRuleInfo {
      * This method returns the value of the database column tbl_tag_rule_info.tag_name
      *
      * @return the value of tbl_tag_rule_info.tag_name
-     *
      * @mbggenerated
      */
     public String getTagName() {
@@ -165,7 +158,6 @@ public class TagRuleInfo {
      * This method sets the value of the database column tbl_tag_rule_info.tag_name
      *
      * @param tagName the value for tbl_tag_rule_info.tag_name
-     *
      * @mbggenerated
      */
     public void setTagName(String tagName) {
@@ -177,7 +169,6 @@ public class TagRuleInfo {
      * This method returns the value of the database column tbl_tag_rule_info.tag_price
      *
      * @return the value of tbl_tag_rule_info.tag_price
-     *
      * @mbggenerated
      */
     public BigDecimal getTagPrice() {
@@ -189,7 +180,6 @@ public class TagRuleInfo {
      * This method sets the value of the database column tbl_tag_rule_info.tag_price
      *
      * @param tagPrice the value for tbl_tag_rule_info.tag_price
-     *
      * @mbggenerated
      */
     public void setTagPrice(BigDecimal tagPrice) {
@@ -201,7 +191,6 @@ public class TagRuleInfo {
      * This method returns the value of the database column tbl_tag_rule_info.tag_desc
      *
      * @return the value of tbl_tag_rule_info.tag_desc
-     *
      * @mbggenerated
      */
     public String getTagDesc() {
@@ -213,7 +202,6 @@ public class TagRuleInfo {
      * This method sets the value of the database column tbl_tag_rule_info.tag_desc
      *
      * @param tagDesc the value for tbl_tag_rule_info.tag_desc
-     *
      * @mbggenerated
      */
     public void setTagDesc(String tagDesc) {
@@ -225,7 +213,6 @@ public class TagRuleInfo {
      * This method returns the value of the database column tbl_tag_rule_info.status
      *
      * @return the value of tbl_tag_rule_info.status
-     *
      * @mbggenerated
      */
     public Integer getStatus() {
@@ -237,7 +224,6 @@ public class TagRuleInfo {
      * This method sets the value of the database column tbl_tag_rule_info.status
      *
      * @param status the value for tbl_tag_rule_info.status
-     *
      * @mbggenerated
      */
     public void setStatus(Integer status) {
@@ -249,7 +235,6 @@ public class TagRuleInfo {
      * This method returns the value of the database column tbl_tag_rule_info.create_time
      *
      * @return the value of tbl_tag_rule_info.create_time
-     *
      * @mbggenerated
      */
     public Date getCreateTime() {
@@ -261,7 +246,6 @@ public class TagRuleInfo {
      * This method sets the value of the database column tbl_tag_rule_info.create_time
      *
      * @param createTime the value for tbl_tag_rule_info.create_time
-     *
      * @mbggenerated
      */
     public void setCreateTime(Date createTime) {
@@ -273,7 +257,6 @@ public class TagRuleInfo {
      * This method returns the value of the database column tbl_tag_rule_info.update_time
      *
      * @return the value of tbl_tag_rule_info.update_time
-     *
      * @mbggenerated
      */
     public Date getUpdateTime() {
@@ -285,7 +268,6 @@ public class TagRuleInfo {
      * This method sets the value of the database column tbl_tag_rule_info.update_time
      *
      * @param updateTime the value for tbl_tag_rule_info.update_time
-     *
      * @mbggenerated
      */
     public void setUpdateTime(Date updateTime) {

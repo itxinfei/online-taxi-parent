@@ -11,8 +11,6 @@ import java.util.Optional;
 
 /**
  * 单位转换工具类
- *
- * @date 2018/08/15
  */
 public class UnitConverter {
 

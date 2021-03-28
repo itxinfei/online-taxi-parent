@@ -7,8 +7,6 @@ import java.util.List;
 
 /**
  * 订单明细DTO
- *
- * @date 2018/10/24
  */
 @Data
 @Accessors(chain = true)

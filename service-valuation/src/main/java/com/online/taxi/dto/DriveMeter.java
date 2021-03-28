@@ -1,11 +1,11 @@
 package com.online.taxi.dto;
 
-import com.online.taxi.constatnt.ChargingCategoryEnum;
-import com.online.taxi.dto.map.Distance;
-import com.online.taxi.dto.map.Route;
+import com.online.taxi.common.constatnt.ChargingCategoryEnum;
+import com.online.taxi.common.dto.map.Distance;
+import com.online.taxi.common.dto.map.Route;
+import com.online.taxi.common.dto.valuation.charging.Rule;
+import com.online.taxi.common.entity.Order;
 import com.online.taxi.dto.request.CurrentPriceRequestDto;
-import com.online.taxi.dto.valuation.charging.Rule;
-import com.online.taxi.entity.Order;
 import com.online.taxi.task.ValuationRequestTask;
 import com.online.taxi.util.UnitConverter;
 import lombok.Data;
@@ -20,8 +20,6 @@ import java.util.Optional;
 
 /**
  * 行驶计价相关的请求参数
- *
- * @date 2018/8/14
  */
 @Data
 @RequiredArgsConstructor

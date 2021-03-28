@@ -3,8 +3,8 @@
 #  port: 8004
 
 #应用名称及验证账号
-spring: 
-  application: 
+spring:
+  application:
     name: service-order
   redis:
     database: 0
@@ -13,27 +13,27 @@ spring:
     timeout: 2000
     password:
     #数据库连接配置
-  datasource: 
-         #配置当前使用的数据源的操作类型
-    type: com.alibaba.druid.pool.DruidDataSource                          
-         #配置MySQL的驱动程序类
-    driver-class-name: com.mysql.cj.jdbc.Driver                             
-         #数据库连接地址
+  datasource:
+    #配置当前使用的数据源的操作类型
+    type: com.alibaba.druid.pool.DruidDataSource
+    #配置MySQL的驱动程序类
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #数据库连接地址
     url: jdbc:mysql://localhost:3306/online-taxi?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-         #数据库连接用户名
-    username: root                                                        
-         #数据库连接密码
-    password: root                                                        
-         #进行数据库连接池的配置
-    dbcp2:          
-             #初始化提供的连接数                                                      
-      initial-size: 5    
-             #数据库连接池的最小维持连接数                                                 
-      min-idle: 5          
-             #最大的连接数                                               
-      max-total: 5 
-             #等待连接获取的最大超时时间                                                       
-      max-wait-millis: 200                                                
+    #数据库连接用户名
+    username: root
+    #数据库连接密码
+    password: root
+    #进行数据库连接池的配置
+    dbcp2:
+      #初始化提供的连接数
+      initial-size: 5
+      #数据库连接池的最小维持连接数
+      min-idle: 5
+      #最大的连接数
+      max-total: 5
+      #等待连接获取的最大超时时间
+      max-wait-millis: 200
       validation-query: SELECT 1
       test-while-idle: true
       test-on-borrow: false
@@ -47,36 +47,35 @@ sentinel:
   masterName: mymaster
 
 #注册中心
-eureka: 
-  
+eureka:
+
   client:
     enabled: true
-        #设置服务注册中心的URL
-    service-url:                      
+    #设置服务注册中心的URL
+    service-url:
       defaultZone: http://root:root@eureka-7900:7900/eureka/
-  instance: 
+  instance:
     hostname: localhost
 
 #mybatis配置
 mybatis:
   #mybatis配置文件所在路径
-  config-location: classpath:mybatis/mybatis.cfg.xml 
-    #定义所有操作类的别名所在包
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  #定义所有操作类的别名所在包
   type-aliases-package: com.online.taxi.common
-    #所有的mapper映射文件  
-  mapper-locations:             
-  - classpath:mybatis/mapper/*.xml      
+  #所有的mapper映射文件
+  mapper-locations:
+    - classpath:mybatis/mapper/*.xml
 
-  
 ---
 spring:
   profiles: 8004
 #服务端口
-server: 
+server:
   port: 8004
 ---
 spring:
   profiles: 8005
 #服务端口
-server: 
+server:
   port: 8005    

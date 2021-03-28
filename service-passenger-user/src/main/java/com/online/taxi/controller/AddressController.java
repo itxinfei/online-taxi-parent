@@ -15,12 +15,13 @@ public class AddressController {
 
     /**
      * 根据乘客id和地址类型获取地址信息
+     *
      * @param passengerId
      * @param type
      * @return
      */
     @GetMapping("/get-address/{passengerId}/{type}")
-    public ResponseResult getAddress(@PathVariable("passengerId") int passengerId,@PathVariable("type") int type){
+    public ResponseResult getAddress(@PathVariable("passengerId") int passengerId, @PathVariable("type") int type) {
         //获取乘客地址信息
         return null;
     }

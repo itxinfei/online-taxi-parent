@@ -5,11 +5,12 @@ import lombok.Getter;
 
 /**
  * 监听消息听众类型
+ *
  * @author yueyi2019
  */
 @Getter
 @AllArgsConstructor
-public enum AudienceEnum implements com.online.taxi.constatnt.CodeEnum {
+public enum AudienceEnum implements CodeEnum {
     /**
      * 别名
      */

@@ -1,6 +1,6 @@
 package com.online.taxi.service.impl;
 
-import com.online.taxi.constatnt.ChargingCategoryEnum;
+import com.online.taxi.common.constatnt.ChargingCategoryEnum;
 import com.online.taxi.dao.OrderDao;
 import com.online.taxi.dao.cache.PriceCache;
 import com.online.taxi.dao.cache.RuleCache;
@@ -9,10 +9,10 @@ import com.online.taxi.dto.ForecastDetail;
 import com.online.taxi.dto.PriceMeter;
 import com.online.taxi.dto.request.CurrentPriceRequestDto;
 import com.online.taxi.dto.response.CurrentPriceResponseDto;
-import com.online.taxi.dto.valuation.charging.Rule;
-import com.online.taxi.dto.valuation.discount.DiscountPrice;
-import com.online.taxi.entity.OrderRulePrice;
-import com.online.taxi.entity.OrderRulePriceDetail;
+import com.online.taxi.common.dto.valuation.charging.Rule;
+import com.online.taxi.common.dto.valuation.discount.DiscountPrice;
+import com.online.taxi.common.entity.OrderRulePrice;
+import com.online.taxi.common.entity.OrderRulePriceDetail;
 import com.online.taxi.service.ValuationService;
 import com.online.taxi.task.ValuationRequestTask;
 import com.online.taxi.task.ValuationTask;
@@ -38,8 +38,6 @@ import java.util.stream.Collectors;
 
 /**
  * 计价服务
- *
- * @date 2018/8/14
  */
 @Service
 @Slf4j

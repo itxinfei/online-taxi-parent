@@ -1,16 +1,16 @@
 package com.online.taxi.task;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.online.taxi.common.dto.ResponseResult;
+import com.online.taxi.common.dto.map.Distance;
+import com.online.taxi.common.dto.map.Route;
+import com.online.taxi.common.dto.valuation.charging.Rule;
+import com.online.taxi.common.entity.OrderRuleMirror;
+import com.online.taxi.common.util.RestTemplateHepler;
+import com.online.taxi.common.util.ServiceAddress;
 import com.online.taxi.dao.OrderRuleMirrorDao;
 import com.online.taxi.dao.cache.RuleCache;
 import com.online.taxi.dto.DriveMeter;
-import com.online.taxi.dto.ResponseResult;
-import com.online.taxi.dto.map.Distance;
-import com.online.taxi.dto.map.Route;
-import com.online.taxi.dto.valuation.charging.Rule;
-import com.online.taxi.entity.OrderRuleMirror;
-import com.online.taxi.util.RestTemplateHepler;
-import com.online.taxi.util.ServiceAddress;
 import com.online.taxi.util.UnitConverter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -28,8 +28,6 @@ import java.util.stream.Collectors;
 
 /**
  * 计价服务请求任务
- *
- * @date 2018/8/14
  */
 @Component
 @Slf4j
@@ -37,16 +35,16 @@ import java.util.stream.Collectors;
 public class ValuationRequestTask {
 
     @NonNull
-    private OrderRuleMirrorDao orderRuleMirrorDao;
+    private final OrderRuleMirrorDao orderRuleMirrorDao;
 
     @NonNull
-    private RuleCache ruleCache;
+    private final RuleCache ruleCache;
 
     @NonNull
-    private RestTemplate restTemplate;
+    private final RestTemplate restTemplate;
 
     @NonNull
-    private ServiceAddress serviceAddress;
+    private final ServiceAddress serviceAddress;
 
     /**
      * 将Json解析为Rule
@@ -62,7 +60,6 @@ public class ValuationRequestTask {
             if (rule != null) {
                 return rule;
             }
-
             OrderRuleMirror orderRuleMirror = orderRuleMirrorDao.selectByOrderId(orderId);
             String ruleJson = orderRuleMirror.getRule();
             log.info("orderId={}, RuleJson={}", orderId, ruleJson);

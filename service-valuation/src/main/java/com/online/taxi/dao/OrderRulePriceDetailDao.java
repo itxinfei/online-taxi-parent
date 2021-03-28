@@ -1,7 +1,7 @@
 package com.online.taxi.dao;
 
-import com.online.taxi.constatnt.ChargingCategoryEnum;
-import com.online.taxi.entity.OrderRulePriceDetail;
+import com.online.taxi.common.constatnt.ChargingCategoryEnum;
+import com.online.taxi.common.entity.OrderRulePriceDetail;
 import com.online.taxi.mapper.OrderRulePriceDetailMapper;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -11,8 +11,6 @@ import java.util.List;
 
 /**
  * 订单计费规则明细操作DAO
- *
- * @date 2018/8/14
  */
 @Repository
 @RequiredArgsConstructor

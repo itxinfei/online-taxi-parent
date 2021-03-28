@@ -11,7 +11,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public enum ChargingCategoryEnum implements com.online.taxi.constatnt.CodeEnum {
+public enum ChargingCategoryEnum implements CodeEnum {
 
     /**
      * 预估订单: 0

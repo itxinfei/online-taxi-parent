@@ -2,7 +2,7 @@ package com.online.taxi.dao.cache;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.online.taxi.constatnt.OrderRuleNames;
+import com.online.taxi.common.constatnt.OrderRuleNames;
 import com.online.taxi.dto.PriceMeter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -14,8 +14,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 对订单价格进行缓存操作
- *
- * @date 2018/10/18
  */
 @Component
 @RequiredArgsConstructor

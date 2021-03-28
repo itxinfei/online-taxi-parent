@@ -17,17 +17,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/auth")
 public class AuthController {
 
-
     @Autowired
     private ServicePassengerUserInfoService passengerUserInfoService;
 
     @PostMapping("/login")
-    public ResponseResult passengerLogin(@RequestBody @Validated LoginRequest request){
+    public ResponseResult passengerLogin(@RequestBody @Validated LoginRequest request) {
         String passengerPhone = request.getPassengerPhone();
-
         return passengerUserInfoService.login(passengerPhone);
-
     }
 
-    public void logout(){}
+    public void logout() {
+    }
 }

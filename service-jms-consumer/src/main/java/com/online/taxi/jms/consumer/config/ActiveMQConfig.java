@@ -16,21 +16,21 @@ import javax.jms.Topic;
 
 @Configuration
 public class ActiveMQConfig {
- 
+
     @Value("${spring.activemq.broker-url}")
-    private  String brokerUrl;
- 
+    private String brokerUrl;
+
     @Bean
     public Queue queue() {
         return new ActiveMQQueue("ActiveMQQueue");
     }
- 
+
     @Bean
-    public Topic topic(){
+    public Topic topic() {
         return new ActiveMQTopic("ActiveMQTopic");
     }
- 
- 
+
+
     @Bean
     public ActiveMQConnectionFactory connectionFactory(RedeliveryPolicy redeliveryPolicy) {
 
@@ -47,7 +47,7 @@ public class ActiveMQConfig {
      * Queue模式连接注入
      */
     @Bean
-    public JmsListenerContainerFactory<?> jmsListenerContainerQueue(ActiveMQConnectionFactory connectionFactory){
+    public JmsListenerContainerFactory<?> jmsListenerContainerQueue(ActiveMQConnectionFactory connectionFactory) {
         DefaultJmsListenerContainerFactory bean = new DefaultJmsListenerContainerFactory();
         bean.setConnectionFactory(connectionFactory);
 
@@ -64,11 +64,12 @@ public class ActiveMQConfig {
 
     /**
      * Topic模式连接注入
+     *
      * @param connectionFactory
      * @return
      */
     @Bean
-    public JmsListenerContainerFactory<?> jmsListenerContainerTopic(ActiveMQConnectionFactory connectionFactory){
+    public JmsListenerContainerFactory<?> jmsListenerContainerTopic(ActiveMQConnectionFactory connectionFactory) {
         DefaultJmsListenerContainerFactory bean = new DefaultJmsListenerContainerFactory();
         //设置为发布订阅方式, 默认情况下使用的生产消费者方式
         bean.setPubSubDomain(true);
@@ -77,8 +78,8 @@ public class ActiveMQConfig {
     }
 
     @Bean
-    public RedeliveryPolicy redeliveryPolicy(){
-        RedeliveryPolicy  redeliveryPolicy=   new RedeliveryPolicy();
+    public RedeliveryPolicy redeliveryPolicy() {
+        RedeliveryPolicy redeliveryPolicy = new RedeliveryPolicy();
 //        //是否在每次尝试重新发送失败后,增长这个等待时间
 //        redeliveryPolicy.setUseExponentialBackOff(true);
 //        //重发次数,默认为6次   这里设置为10次
@@ -95,8 +96,8 @@ public class ActiveMQConfig {
     }
 
     @Bean
-    public JmsTemplate jmsTemplate(ActiveMQConnectionFactory activeMQConnectionFactory, Queue queue){
-        JmsTemplate jmsTemplate=new JmsTemplate();
+    public JmsTemplate jmsTemplate(ActiveMQConnectionFactory activeMQConnectionFactory, Queue queue) {
+        JmsTemplate jmsTemplate = new JmsTemplate();
         jmsTemplate.setDeliveryMode(2);//进行持久化配置 1表示非持久化，2表示持久化
         jmsTemplate.setConnectionFactory(activeMQConnectionFactory);
         jmsTemplate.setDefaultDestination(queue); //此处可不设置默认，在发送消息时也可设置队列

@@ -7,8 +7,6 @@ import java.math.BigDecimal;
 
 /**
  * 实时价格DTO
- *
- * @date 2018/11/1
  */
 @Data
 @Accessors(chain = true)

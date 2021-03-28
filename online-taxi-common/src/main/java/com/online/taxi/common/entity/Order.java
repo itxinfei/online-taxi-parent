@@ -1,4 +1,4 @@
-package com.online.taxi.entity;
+package com.online.taxi.common.entity;
 
 import java.util.Date;
 
@@ -544,7 +544,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.id
      *
      * @return the value of tbl_order.id
-     *
      * @mbggenerated
      */
     public Integer getId() {
@@ -556,7 +555,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.id
      *
      * @param id the value for tbl_order.id
-     *
      * @mbggenerated
      */
     public void setId(Integer id) {
@@ -568,7 +566,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.order_number
      *
      * @return the value of tbl_order.order_number
-     *
      * @mbggenerated
      */
     public String getOrderNumber() {
@@ -580,7 +577,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.order_number
      *
      * @param orderNumber the value for tbl_order.order_number
-     *
      * @mbggenerated
      */
     public void setOrderNumber(String orderNumber) {
@@ -592,7 +588,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.passenger_info_id
      *
      * @return the value of tbl_order.passenger_info_id
-     *
      * @mbggenerated
      */
     public Integer getPassengerInfoId() {
@@ -604,7 +599,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.passenger_info_id
      *
      * @param passengerInfoId the value for tbl_order.passenger_info_id
-     *
      * @mbggenerated
      */
     public void setPassengerInfoId(Integer passengerInfoId) {
@@ -616,7 +610,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.passenger_phone
      *
      * @return the value of tbl_order.passenger_phone
-     *
      * @mbggenerated
      */
     public String getPassengerPhone() {
@@ -628,7 +621,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.passenger_phone
      *
      * @param passengerPhone the value for tbl_order.passenger_phone
-     *
      * @mbggenerated
      */
     public void setPassengerPhone(String passengerPhone) {
@@ -640,7 +632,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.device_code
      *
      * @return the value of tbl_order.device_code
-     *
      * @mbggenerated
      */
     public String getDeviceCode() {
@@ -652,7 +643,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.device_code
      *
      * @param deviceCode the value for tbl_order.device_code
-     *
      * @mbggenerated
      */
     public void setDeviceCode(String deviceCode) {
@@ -664,7 +654,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.driver_id
      *
      * @return the value of tbl_order.driver_id
-     *
      * @mbggenerated
      */
     public Integer getDriverId() {
@@ -676,7 +665,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.driver_id
      *
      * @param driverId the value for tbl_order.driver_id
-     *
      * @mbggenerated
      */
     public void setDriverId(Integer driverId) {
@@ -688,7 +676,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.driver_status
      *
      * @return the value of tbl_order.driver_status
-     *
      * @mbggenerated
      */
     public Integer getDriverStatus() {
@@ -700,7 +687,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.driver_status
      *
      * @param driverStatus the value for tbl_order.driver_status
-     *
      * @mbggenerated
      */
     public void setDriverStatus(Integer driverStatus) {
@@ -712,7 +698,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.driver_phone
      *
      * @return the value of tbl_order.driver_phone
-     *
      * @mbggenerated
      */
     public String getDriverPhone() {
@@ -724,7 +709,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.driver_phone
      *
      * @param driverPhone the value for tbl_order.driver_phone
-     *
      * @mbggenerated
      */
     public void setDriverPhone(String driverPhone) {
@@ -736,7 +720,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.car_id
      *
      * @return the value of tbl_order.car_id
-     *
      * @mbggenerated
      */
     public Integer getCarId() {
@@ -748,7 +731,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.car_id
      *
      * @param carId the value for tbl_order.car_id
-     *
      * @mbggenerated
      */
     public void setCarId(Integer carId) {
@@ -760,7 +742,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.plate_number
      *
      * @return the value of tbl_order.plate_number
-     *
      * @mbggenerated
      */
     public String getPlateNumber() {
@@ -772,7 +753,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.plate_number
      *
      * @param plateNumber the value for tbl_order.plate_number
-     *
      * @mbggenerated
      */
     public void setPlateNumber(String plateNumber) {
@@ -784,7 +764,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.user_longitude
      *
      * @return the value of tbl_order.user_longitude
-     *
      * @mbggenerated
      */
     public String getUserLongitude() {
@@ -796,7 +775,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.user_longitude
      *
      * @param userLongitude the value for tbl_order.user_longitude
-     *
      * @mbggenerated
      */
     public void setUserLongitude(String userLongitude) {
@@ -808,7 +786,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.user_latitude
      *
      * @return the value of tbl_order.user_latitude
-     *
      * @mbggenerated
      */
     public String getUserLatitude() {
@@ -820,7 +797,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.user_latitude
      *
      * @param userLatitude the value for tbl_order.user_latitude
-     *
      * @mbggenerated
      */
     public void setUserLatitude(String userLatitude) {
@@ -832,7 +808,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.start_longitude
      *
      * @return the value of tbl_order.start_longitude
-     *
      * @mbggenerated
      */
     public String getStartLongitude() {
@@ -844,7 +819,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.start_longitude
      *
      * @param startLongitude the value for tbl_order.start_longitude
-     *
      * @mbggenerated
      */
     public void setStartLongitude(String startLongitude) {
@@ -856,7 +830,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.start_latitude
      *
      * @return the value of tbl_order.start_latitude
-     *
      * @mbggenerated
      */
     public String getStartLatitude() {
@@ -868,7 +841,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.start_latitude
      *
      * @param startLatitude the value for tbl_order.start_latitude
-     *
      * @mbggenerated
      */
     public void setStartLatitude(String startLatitude) {
@@ -880,7 +852,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.start_address
      *
      * @return the value of tbl_order.start_address
-     *
      * @mbggenerated
      */
     public String getStartAddress() {
@@ -892,7 +863,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.start_address
      *
      * @param startAddress the value for tbl_order.start_address
-     *
      * @mbggenerated
      */
     public void setStartAddress(String startAddress) {
@@ -904,7 +874,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.end_address
      *
      * @return the value of tbl_order.end_address
-     *
      * @mbggenerated
      */
     public String getEndAddress() {
@@ -916,7 +885,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.end_address
      *
      * @param endAddress the value for tbl_order.end_address
-     *
      * @mbggenerated
      */
     public void setEndAddress(String endAddress) {
@@ -928,7 +896,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.start_time
      *
      * @return the value of tbl_order.start_time
-     *
      * @mbggenerated
      */
     public Date getStartTime() {
@@ -940,7 +907,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.start_time
      *
      * @param startTime the value for tbl_order.start_time
-     *
      * @mbggenerated
      */
     public void setStartTime(Date startTime) {
@@ -952,7 +918,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.order_start_time
      *
      * @return the value of tbl_order.order_start_time
-     *
      * @mbggenerated
      */
     public Date getOrderStartTime() {
@@ -964,7 +929,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.order_start_time
      *
      * @param orderStartTime the value for tbl_order.order_start_time
-     *
      * @mbggenerated
      */
     public void setOrderStartTime(Date orderStartTime) {
@@ -976,7 +940,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.end_longitude
      *
      * @return the value of tbl_order.end_longitude
-     *
      * @mbggenerated
      */
     public String getEndLongitude() {
@@ -988,7 +951,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.end_longitude
      *
      * @param endLongitude the value for tbl_order.end_longitude
-     *
      * @mbggenerated
      */
     public void setEndLongitude(String endLongitude) {
@@ -1000,7 +962,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.end_latitude
      *
      * @return the value of tbl_order.end_latitude
-     *
      * @mbggenerated
      */
     public String getEndLatitude() {
@@ -1012,7 +973,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.end_latitude
      *
      * @param endLatitude the value for tbl_order.end_latitude
-     *
      * @mbggenerated
      */
     public void setEndLatitude(String endLatitude) {
@@ -1024,7 +984,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.driver_grab_time
      *
      * @return the value of tbl_order.driver_grab_time
-     *
      * @mbggenerated
      */
     public Date getDriverGrabTime() {
@@ -1036,7 +995,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.driver_grab_time
      *
      * @param driverGrabTime the value for tbl_order.driver_grab_time
-     *
      * @mbggenerated
      */
     public void setDriverGrabTime(Date driverGrabTime) {
@@ -1048,7 +1006,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.driver_start_time
      *
      * @return the value of tbl_order.driver_start_time
-     *
      * @mbggenerated
      */
     public Date getDriverStartTime() {
@@ -1060,7 +1017,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.driver_start_time
      *
      * @param driverStartTime the value for tbl_order.driver_start_time
-     *
      * @mbggenerated
      */
     public void setDriverStartTime(Date driverStartTime) {
@@ -1072,7 +1028,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.driver_arrived_time
      *
      * @return the value of tbl_order.driver_arrived_time
-     *
      * @mbggenerated
      */
     public Date getDriverArrivedTime() {
@@ -1084,7 +1039,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.driver_arrived_time
      *
      * @param driverArrivedTime the value for tbl_order.driver_arrived_time
-     *
      * @mbggenerated
      */
     public void setDriverArrivedTime(Date driverArrivedTime) {
@@ -1096,7 +1050,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.pick_up_passenger_time
      *
      * @return the value of tbl_order.pick_up_passenger_time
-     *
      * @mbggenerated
      */
     public Date getPickUpPassengerTime() {
@@ -1108,7 +1061,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.pick_up_passenger_time
      *
      * @param pickUpPassengerTime the value for tbl_order.pick_up_passenger_time
-     *
      * @mbggenerated
      */
     public void setPickUpPassengerTime(Date pickUpPassengerTime) {
@@ -1120,7 +1072,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.pick_up_passenger_longitude
      *
      * @return the value of tbl_order.pick_up_passenger_longitude
-     *
      * @mbggenerated
      */
     public String getPickUpPassengerLongitude() {
@@ -1132,7 +1083,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.pick_up_passenger_longitude
      *
      * @param pickUpPassengerLongitude the value for tbl_order.pick_up_passenger_longitude
-     *
      * @mbggenerated
      */
     public void setPickUpPassengerLongitude(String pickUpPassengerLongitude) {
@@ -1144,7 +1094,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.pick_up_passenger_latitude
      *
      * @return the value of tbl_order.pick_up_passenger_latitude
-     *
      * @mbggenerated
      */
     public String getPickUpPassengerLatitude() {
@@ -1156,7 +1105,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.pick_up_passenger_latitude
      *
      * @param pickUpPassengerLatitude the value for tbl_order.pick_up_passenger_latitude
-     *
      * @mbggenerated
      */
     public void setPickUpPassengerLatitude(String pickUpPassengerLatitude) {
@@ -1168,7 +1116,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.pick_up_passenger_address
      *
      * @return the value of tbl_order.pick_up_passenger_address
-     *
      * @mbggenerated
      */
     public String getPickUpPassengerAddress() {
@@ -1180,7 +1127,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.pick_up_passenger_address
      *
      * @param pickUpPassengerAddress the value for tbl_order.pick_up_passenger_address
-     *
      * @mbggenerated
      */
     public void setPickUpPassengerAddress(String pickUpPassengerAddress) {
@@ -1192,7 +1138,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.receive_passenger_time
      *
      * @return the value of tbl_order.receive_passenger_time
-     *
      * @mbggenerated
      */
     public Date getReceivePassengerTime() {
@@ -1204,7 +1149,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.receive_passenger_time
      *
      * @param receivePassengerTime the value for tbl_order.receive_passenger_time
-     *
      * @mbggenerated
      */
     public void setReceivePassengerTime(Date receivePassengerTime) {
@@ -1216,7 +1160,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.receive_passenger_longitude
      *
      * @return the value of tbl_order.receive_passenger_longitude
-     *
      * @mbggenerated
      */
     public String getReceivePassengerLongitude() {
@@ -1228,7 +1171,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.receive_passenger_longitude
      *
      * @param receivePassengerLongitude the value for tbl_order.receive_passenger_longitude
-     *
      * @mbggenerated
      */
     public void setReceivePassengerLongitude(String receivePassengerLongitude) {
@@ -1240,7 +1182,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.receive_passenger_latitude
      *
      * @return the value of tbl_order.receive_passenger_latitude
-     *
      * @mbggenerated
      */
     public String getReceivePassengerLatitude() {
@@ -1252,7 +1193,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.receive_passenger_latitude
      *
      * @param receivePassengerLatitude the value for tbl_order.receive_passenger_latitude
-     *
      * @mbggenerated
      */
     public void setReceivePassengerLatitude(String receivePassengerLatitude) {
@@ -1264,7 +1204,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.receive_passenger_address
      *
      * @return the value of tbl_order.receive_passenger_address
-     *
      * @mbggenerated
      */
     public String getReceivePassengerAddress() {
@@ -1276,7 +1215,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.receive_passenger_address
      *
      * @param receivePassengerAddress the value for tbl_order.receive_passenger_address
-     *
      * @mbggenerated
      */
     public void setReceivePassengerAddress(String receivePassengerAddress) {
@@ -1288,7 +1226,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.passenger_getoff_time
      *
      * @return the value of tbl_order.passenger_getoff_time
-     *
      * @mbggenerated
      */
     public Date getPassengerGetoffTime() {
@@ -1300,7 +1237,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.passenger_getoff_time
      *
      * @param passengerGetoffTime the value for tbl_order.passenger_getoff_time
-     *
      * @mbggenerated
      */
     public void setPassengerGetoffTime(Date passengerGetoffTime) {
@@ -1312,7 +1248,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.passenger_getoff_longitude
      *
      * @return the value of tbl_order.passenger_getoff_longitude
-     *
      * @mbggenerated
      */
     public String getPassengerGetoffLongitude() {
@@ -1324,7 +1259,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.passenger_getoff_longitude
      *
      * @param passengerGetoffLongitude the value for tbl_order.passenger_getoff_longitude
-     *
      * @mbggenerated
      */
     public void setPassengerGetoffLongitude(String passengerGetoffLongitude) {
@@ -1336,7 +1270,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.passenger_getoff_latitude
      *
      * @return the value of tbl_order.passenger_getoff_latitude
-     *
      * @mbggenerated
      */
     public String getPassengerGetoffLatitude() {
@@ -1348,7 +1281,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.passenger_getoff_latitude
      *
      * @param passengerGetoffLatitude the value for tbl_order.passenger_getoff_latitude
-     *
      * @mbggenerated
      */
     public void setPassengerGetoffLatitude(String passengerGetoffLatitude) {
@@ -1360,7 +1292,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.passenger_getoff_address
      *
      * @return the value of tbl_order.passenger_getoff_address
-     *
      * @mbggenerated
      */
     public String getPassengerGetoffAddress() {
@@ -1372,7 +1303,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.passenger_getoff_address
      *
      * @param passengerGetoffAddress the value for tbl_order.passenger_getoff_address
-     *
      * @mbggenerated
      */
     public void setPassengerGetoffAddress(String passengerGetoffAddress) {
@@ -1384,7 +1314,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.other_name
      *
      * @return the value of tbl_order.other_name
-     *
      * @mbggenerated
      */
     public String getOtherName() {
@@ -1396,7 +1325,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.other_name
      *
      * @param otherName the value for tbl_order.other_name
-     *
      * @mbggenerated
      */
     public void setOtherName(String otherName) {
@@ -1408,7 +1336,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.other_phone
      *
      * @return the value of tbl_order.other_phone
-     *
      * @mbggenerated
      */
     public String getOtherPhone() {
@@ -1420,7 +1347,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.other_phone
      *
      * @param otherPhone the value for tbl_order.other_phone
-     *
      * @mbggenerated
      */
     public void setOtherPhone(String otherPhone) {
@@ -1432,7 +1358,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.order_type
      *
      * @return the value of tbl_order.order_type
-     *
      * @mbggenerated
      */
     public Integer getOrderType() {
@@ -1444,7 +1369,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.order_type
      *
      * @param orderType the value for tbl_order.order_type
-     *
      * @mbggenerated
      */
     public void setOrderType(Integer orderType) {
@@ -1456,7 +1380,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.service_type
      *
      * @return the value of tbl_order.service_type
-     *
      * @mbggenerated
      */
     public Integer getServiceType() {
@@ -1468,7 +1391,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.service_type
      *
      * @param serviceType the value for tbl_order.service_type
-     *
      * @mbggenerated
      */
     public void setServiceType(Integer serviceType) {
@@ -1480,7 +1402,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.order_channel
      *
      * @return the value of tbl_order.order_channel
-     *
      * @mbggenerated
      */
     public Integer getOrderChannel() {
@@ -1492,7 +1413,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.order_channel
      *
      * @param orderChannel the value for tbl_order.order_channel
-     *
      * @mbggenerated
      */
     public void setOrderChannel(Integer orderChannel) {
@@ -1504,7 +1424,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.status
      *
      * @return the value of tbl_order.status
-     *
      * @mbggenerated
      */
     public Integer getStatus() {
@@ -1516,7 +1435,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.status
      *
      * @param status the value for tbl_order.status
-     *
      * @mbggenerated
      */
     public void setStatus(Integer status) {
@@ -1528,7 +1446,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.user_feature
      *
      * @return the value of tbl_order.user_feature
-     *
      * @mbggenerated
      */
     public String getUserFeature() {
@@ -1540,7 +1457,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.user_feature
      *
      * @param userFeature the value for tbl_order.user_feature
-     *
      * @mbggenerated
      */
     public void setUserFeature(String userFeature) {
@@ -1552,7 +1468,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.transaction_id
      *
      * @return the value of tbl_order.transaction_id
-     *
      * @mbggenerated
      */
     public String getTransactionId() {
@@ -1564,7 +1479,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.transaction_id
      *
      * @param transactionId the value for tbl_order.transaction_id
-     *
      * @mbggenerated
      */
     public void setTransactionId(String transactionId) {
@@ -1576,7 +1490,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.mapping_id
      *
      * @return the value of tbl_order.mapping_id
-     *
      * @mbggenerated
      */
     public String getMappingId() {
@@ -1588,7 +1501,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.mapping_id
      *
      * @param mappingId the value for tbl_order.mapping_id
-     *
      * @mbggenerated
      */
     public void setMappingId(String mappingId) {
@@ -1600,7 +1512,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.mapping_number
      *
      * @return the value of tbl_order.mapping_number
-     *
      * @mbggenerated
      */
     public String getMappingNumber() {
@@ -1612,7 +1523,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.mapping_number
      *
      * @param mappingNumber the value for tbl_order.mapping_number
-     *
      * @mbggenerated
      */
     public void setMappingNumber(String mappingNumber) {
@@ -1624,7 +1534,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.other_mapping_id
      *
      * @return the value of tbl_order.other_mapping_id
-     *
      * @mbggenerated
      */
     public String getOtherMappingId() {
@@ -1636,7 +1545,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.other_mapping_id
      *
      * @param otherMappingId the value for tbl_order.other_mapping_id
-     *
      * @mbggenerated
      */
     public void setOtherMappingId(String otherMappingId) {
@@ -1648,7 +1556,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.other_mapping_number
      *
      * @return the value of tbl_order.other_mapping_number
-     *
      * @mbggenerated
      */
     public String getOtherMappingNumber() {
@@ -1660,7 +1567,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.other_mapping_number
      *
      * @param otherMappingNumber the value for tbl_order.other_mapping_number
-     *
      * @mbggenerated
      */
     public void setOtherMappingNumber(String otherMappingNumber) {
@@ -1672,7 +1578,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.merchant_id
      *
      * @return the value of tbl_order.merchant_id
-     *
      * @mbggenerated
      */
     public String getMerchantId() {
@@ -1684,7 +1589,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.merchant_id
      *
      * @param merchantId the value for tbl_order.merchant_id
-     *
      * @mbggenerated
      */
     public void setMerchantId(String merchantId) {
@@ -1696,7 +1600,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_evaluate_driver
      *
      * @return the value of tbl_order.is_evaluate_driver
-     *
      * @mbggenerated
      */
     public Integer getIsEvaluateDriver() {
@@ -1708,7 +1611,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_evaluate_driver
      *
      * @param isEvaluateDriver the value for tbl_order.is_evaluate_driver
-     *
      * @mbggenerated
      */
     public void setIsEvaluateDriver(Integer isEvaluateDriver) {
@@ -1720,7 +1622,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_evaluate
      *
      * @return the value of tbl_order.is_evaluate
-     *
      * @mbggenerated
      */
     public Integer getIsEvaluate() {
@@ -1732,7 +1633,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_evaluate
      *
      * @param isEvaluate the value for tbl_order.is_evaluate
-     *
      * @mbggenerated
      */
     public void setIsEvaluate(Integer isEvaluate) {
@@ -1744,7 +1644,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.invoice_type
      *
      * @return the value of tbl_order.invoice_type
-     *
      * @mbggenerated
      */
     public Integer getInvoiceType() {
@@ -1756,7 +1655,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.invoice_type
      *
      * @param invoiceType the value for tbl_order.invoice_type
-     *
      * @mbggenerated
      */
     public void setInvoiceType(Integer invoiceType) {
@@ -1768,7 +1666,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_annotate
      *
      * @return the value of tbl_order.is_annotate
-     *
      * @mbggenerated
      */
     public Integer getIsAnnotate() {
@@ -1780,7 +1677,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_annotate
      *
      * @param isAnnotate the value for tbl_order.is_annotate
-     *
      * @mbggenerated
      */
     public void setIsAnnotate(Integer isAnnotate) {
@@ -1792,7 +1688,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.source
      *
      * @return the value of tbl_order.source
-     *
      * @mbggenerated
      */
     public String getSource() {
@@ -1804,7 +1699,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.source
      *
      * @param source the value for tbl_order.source
-     *
      * @mbggenerated
      */
     public void setSource(String source) {
@@ -1816,7 +1710,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.use_coupon
      *
      * @return the value of tbl_order.use_coupon
-     *
      * @mbggenerated
      */
     public Integer getUseCoupon() {
@@ -1828,7 +1721,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.use_coupon
      *
      * @param useCoupon the value for tbl_order.use_coupon
-     *
      * @mbggenerated
      */
     public void setUseCoupon(Integer useCoupon) {
@@ -1840,7 +1732,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.cancel_order_type
      *
      * @return the value of tbl_order.cancel_order_type
-     *
      * @mbggenerated
      */
     public Integer getCancelOrderType() {
@@ -1852,7 +1743,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.cancel_order_type
      *
      * @param cancelOrderType the value for tbl_order.cancel_order_type
-     *
      * @mbggenerated
      */
     public void setCancelOrderType(Integer cancelOrderType) {
@@ -1864,7 +1754,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.pay_type
      *
      * @return the value of tbl_order.pay_type
-     *
      * @mbggenerated
      */
     public Integer getPayType() {
@@ -1876,7 +1765,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.pay_type
      *
      * @param payType the value for tbl_order.pay_type
-     *
      * @mbggenerated
      */
     public void setPayType(Integer payType) {
@@ -1888,7 +1776,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_paid
      *
      * @return the value of tbl_order.is_paid
-     *
      * @mbggenerated
      */
     public Integer getIsPaid() {
@@ -1900,7 +1787,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_paid
      *
      * @param isPaid the value for tbl_order.is_paid
-     *
      * @mbggenerated
      */
     public void setIsPaid(Integer isPaid) {
@@ -1912,7 +1798,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_cancel
      *
      * @return the value of tbl_order.is_cancel
-     *
      * @mbggenerated
      */
     public Integer getIsCancel() {
@@ -1924,7 +1809,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_cancel
      *
      * @param isCancel the value for tbl_order.is_cancel
-     *
      * @mbggenerated
      */
     public void setIsCancel(Integer isCancel) {
@@ -1936,7 +1820,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_adjust
      *
      * @return the value of tbl_order.is_adjust
-     *
      * @mbggenerated
      */
     public Integer getIsAdjust() {
@@ -1948,7 +1831,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_adjust
      *
      * @param isAdjust the value for tbl_order.is_adjust
-     *
      * @mbggenerated
      */
     public void setIsAdjust(Integer isAdjust) {
@@ -1960,7 +1842,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_dissent
      *
      * @return the value of tbl_order.is_dissent
-     *
      * @mbggenerated
      */
     public Integer getIsDissent() {
@@ -1972,7 +1853,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_dissent
      *
      * @param isDissent the value for tbl_order.is_dissent
-     *
      * @mbggenerated
      */
     public void setIsDissent(Integer isDissent) {
@@ -1984,7 +1864,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_manual
      *
      * @return the value of tbl_order.is_manual
-     *
      * @mbggenerated
      */
     public Integer getIsManual() {
@@ -1996,7 +1875,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_manual
      *
      * @param isManual the value for tbl_order.is_manual
-     *
      * @mbggenerated
      */
     public void setIsManual(Integer isManual) {
@@ -2008,7 +1886,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_following
      *
      * @return the value of tbl_order.is_following
-     *
      * @mbggenerated
      */
     public Integer getIsFollowing() {
@@ -2020,7 +1897,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_following
      *
      * @param isFollowing the value for tbl_order.is_following
-     *
      * @mbggenerated
      */
     public void setIsFollowing(Integer isFollowing) {
@@ -2032,7 +1908,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_fake_success
      *
      * @return the value of tbl_order.is_fake_success
-     *
      * @mbggenerated
      */
     public Integer getIsFakeSuccess() {
@@ -2044,7 +1919,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_fake_success
      *
      * @param isFakeSuccess the value for tbl_order.is_fake_success
-     *
      * @mbggenerated
      */
     public void setIsFakeSuccess(Integer isFakeSuccess) {
@@ -2056,7 +1930,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.memo
      *
      * @return the value of tbl_order.memo
-     *
      * @mbggenerated
      */
     public String getMemo() {
@@ -2068,7 +1941,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.memo
      *
      * @param memo the value for tbl_order.memo
-     *
      * @mbggenerated
      */
     public void setMemo(String memo) {
@@ -2080,7 +1952,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.is_use_risk
      *
      * @return the value of tbl_order.is_use_risk
-     *
      * @mbggenerated
      */
     public Integer getIsUseRisk() {
@@ -2092,7 +1963,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.is_use_risk
      *
      * @param isUseRisk the value for tbl_order.is_use_risk
-     *
      * @mbggenerated
      */
     public void setIsUseRisk(Integer isUseRisk) {
@@ -2104,7 +1974,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.create_time
      *
      * @return the value of tbl_order.create_time
-     *
      * @mbggenerated
      */
     public Date getCreateTime() {
@@ -2116,7 +1985,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.create_time
      *
      * @param createTime the value for tbl_order.create_time
-     *
      * @mbggenerated
      */
     public void setCreateTime(Date createTime) {
@@ -2128,7 +1996,6 @@ public class Order {
      * This method returns the value of the database column tbl_order.update_time
      *
      * @return the value of tbl_order.update_time
-     *
      * @mbggenerated
      */
     public Date getUpdateTime() {
@@ -2140,7 +2007,6 @@ public class Order {
      * This method sets the value of the database column tbl_order.update_time
      *
      * @param updateTime the value for tbl_order.update_time
-     *
      * @mbggenerated
      */
     public void setUpdateTime(Date updateTime) {

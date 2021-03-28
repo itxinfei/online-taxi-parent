@@ -21,18 +21,19 @@ import com.online.taxi.service.AliService;
 
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONObject;
+
 /**
  * @author oi
  */
 @Service
 @Slf4j
 public class AliServiceImpl implements AliService {
-	
-	/**
-	*   缓存用于替换内容的模板
-	 */
+
+    /**
+     * 缓存用于替换内容的模板
+     */
     private Map<String, String> templateMaps = new HashMap<String, String>();
-    
+
     @Autowired
     private SmsTemplateDao smsTemplateDto;
     
@@ -52,13 +53,13 @@ public class AliServiceImpl implements AliService {
             for (SmsTemplateDto template : templates) {
                 // 从DB加载模板内容至缓存
                 if (!templateMaps.containsKey(template.getId())) {
-                	//此处注释掉的内容为，将db模板加载到内存
-                	ServiceSmsTemplate t = smsTemplateDto.getByTemplateId(template.getId());
-                	System.out.println(t.getTemplateContent());
+                    //此处注释掉的内容为，将db模板加载到内存
+                    ServiceSmsTemplate t = smsTemplateDto.getByTemplateId(template.getId());
+                    System.out.println(t.getTemplateContent());
                     templateMaps.put(template.getId(),
-                    		smsTemplateDto.getByTemplateId(template.getId()).getTemplateContent());
+                            smsTemplateDto.getByTemplateId(template.getId()).getTemplateContent());
                 }
-                
+
                 // 替换占位符
                 String content = templateMaps.get(template.getId());
                 for (Map.Entry<String, Object> entry : template.getTemplateMap().entrySet()) {
@@ -68,7 +69,7 @@ public class AliServiceImpl implements AliService {
                 // 发生错误时，不影响其他手机号和模板的发送
                 try {
                     int result = send(phoneNumber, template.getId(), template.getTemplateMap());
-                    
+
                     // 组装SMS对象
                     sms.setSendTime(new Date());
                     sms.setOperatorName("");
@@ -98,12 +99,12 @@ public class AliServiceImpl implements AliService {
 
         return sendMsg(phoneNumber, templateId, param.toString());
     }
-    
+
     private int sendMsg(String phoneNumber, String templateCode, String param) {
         /**
          * 按照短信供应商的api编写即可
-    	*/
-    	return SmsStatusEnum.SEND_SUCCESS.getCode();
+         */
+        return SmsStatusEnum.SEND_SUCCESS.getCode();
 
     }
 }

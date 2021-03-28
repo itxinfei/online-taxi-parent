@@ -1,11 +1,11 @@
 package com.online.taxi.controller;
 
-import com.online.taxi.constatnt.BusinessInterfaceStatus;
+import com.online.taxi.common.constatnt.BusinessInterfaceStatus;
+import com.online.taxi.common.dto.ResponseResult;
+import com.online.taxi.common.dto.valuation.PriceResult;
 import com.online.taxi.dto.ForecastDetail;
-import com.online.taxi.dto.ResponseResult;
 import com.online.taxi.dto.request.CurrentPriceRequestDto;
 import com.online.taxi.dto.response.CurrentPriceResponseDto;
-import com.online.taxi.dto.valuation.PriceResult;
 import com.online.taxi.service.ValuationService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -20,8 +20,6 @@ import java.util.Optional;
 
 /**
  * 计价规则控制器
- *
- * @date 2018/8/14
  */
 @RestController
 @Slf4j

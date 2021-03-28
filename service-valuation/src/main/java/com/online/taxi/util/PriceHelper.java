@@ -6,8 +6,6 @@ import java.util.Arrays;
 
 /**
  * 价格计算帮助类
- *
- * @date 2018/10/29
  */
 public class PriceHelper {
 

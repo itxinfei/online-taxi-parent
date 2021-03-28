@@ -3,6 +3,7 @@ package com.online.taxi.dao.entity;
 import java.util.Date;
 
 public class PassengerUserInfo {
+
     private Long id;
 
     private Date registerDate;

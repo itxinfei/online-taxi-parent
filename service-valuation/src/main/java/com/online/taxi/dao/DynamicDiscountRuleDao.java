@@ -1,7 +1,7 @@
 package com.online.taxi.dao;
 
-import com.online.taxi.dto.valuation.discount.DiscountCondition;
-import com.online.taxi.dto.valuation.discount.DiscountPrice;
+import com.online.taxi.common.dto.valuation.discount.DiscountCondition;
+import com.online.taxi.common.dto.valuation.discount.DiscountPrice;
 import com.online.taxi.mapper.DynamicDiscountRuleMapper;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -21,10 +21,11 @@ public class DynamicDiscountRuleDao {
 
     /**
      * 根据检索条件查询调价信息
+     *
      * @param condition 检索条件
      * @return 调价信息
      */
-    public DiscountPrice findDiscountByCondition(DiscountCondition condition){
+    public DiscountPrice findDiscountByCondition(DiscountCondition condition) {
         return dynamicDiscountRuleMapper.findDiscountByCondition(condition);
     }
 }

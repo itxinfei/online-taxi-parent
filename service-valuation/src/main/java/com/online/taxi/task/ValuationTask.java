@@ -1,6 +1,14 @@
 package com.online.taxi.task;
 
-import com.online.taxi.constatnt.ChargingCategoryEnum;
+import com.online.taxi.common.constatnt.ChargingCategoryEnum;
+import com.online.taxi.common.dto.valuation.charging.KeyRule;
+import com.online.taxi.common.dto.valuation.charging.Rule;
+import com.online.taxi.common.dto.valuation.charging.TagPrice;
+import com.online.taxi.common.dto.valuation.discount.DiscountCondition;
+import com.online.taxi.common.dto.valuation.discount.DiscountPrice;
+import com.online.taxi.common.entity.OrderRulePrice;
+import com.online.taxi.common.entity.OrderRulePriceDetail;
+import com.online.taxi.common.entity.OrderRulePriceTag;
 import com.online.taxi.dao.DynamicDiscountRuleDao;
 import com.online.taxi.dao.OrderRulePriceDao;
 import com.online.taxi.dao.OrderRulePriceDetailDao;
@@ -8,14 +16,7 @@ import com.online.taxi.dao.OrderRulePriceTagDao;
 import com.online.taxi.dto.DriveMeter;
 import com.online.taxi.dto.PriceMeter;
 import com.online.taxi.dto.TimeMeter;
-import com.online.taxi.dto.valuation.charging.KeyRule;
-import com.online.taxi.dto.valuation.charging.Rule;
-import com.online.taxi.dto.valuation.charging.TagPrice;
-import com.online.taxi.dto.valuation.discount.DiscountCondition;
-import com.online.taxi.dto.valuation.discount.DiscountPrice;
-import com.online.taxi.entity.OrderRulePrice;
-import com.online.taxi.entity.OrderRulePriceDetail;
-import com.online.taxi.entity.OrderRulePriceTag;
+
 import com.online.taxi.util.PriceHelper;
 import com.online.taxi.util.TimeSlice;
 import com.online.taxi.util.UnitConverter;
@@ -50,16 +51,16 @@ import java.util.stream.Collectors;
 public class ValuationTask {
 
     @NonNull
-    private OrderRulePriceDao orderRulePriceDao;
+    private final OrderRulePriceDao orderRulePriceDao;
 
     @NonNull
-    private OrderRulePriceDetailDao orderRulePriceDetailDao;
+    private final OrderRulePriceDetailDao orderRulePriceDetailDao;
 
     @NonNull
-    private OrderRulePriceTagDao orderRulePriceTagDao;
+    private final OrderRulePriceTagDao orderRulePriceTagDao;
 
     @NonNull
-    private DynamicDiscountRuleDao dynamicDiscountRuleDao;
+    private final DynamicDiscountRuleDao dynamicDiscountRuleDao;
 
     /**
      * 计算基本价格
